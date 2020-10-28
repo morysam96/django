@@ -23,7 +23,7 @@ class Article(models.Model):
     content=RichTextField()
     created_at=models.DateTimeField(default=datetime.now,blank=False)
     category=models.ForeignKey('Category',on_delete=models.CASCADE)
-    author=models.OneToOneField(UserProfile,on_delete=models.CASCADE)
+    author=models.ForeignKey(UserProfile,on_delete=models.CASCADE)
     def __str__(self):
         return self.title
 class Category(models.Model):
