@@ -6,3 +6,7 @@ venv/
 db.sqlite3
 #migration
 blog/migrations/
+# Static files
+files/
+djangoProject/admin/
+djangoProject/ckeditor/
